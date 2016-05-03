@@ -1,6 +1,7 @@
 
 $(function() {
 
+   //Change label css when input is in focus
    $(".input input").focus(function() {
 
       $(this).parent(".input").each(function() {
@@ -30,7 +31,7 @@ $(function() {
 
       }
    });
-
+   //Animate button when clicked
    $(".button").click(function(e) {
       var pX = e.pageX,
          pY = e.pageY,
@@ -47,7 +48,7 @@ $(function() {
       }, 600);
       $("button", this).addClass('active');
    })
-
+   
    $(".alt-2").click(function() {
       if (!$(this).hasClass('material-button')) {
          $(".shape").css({
